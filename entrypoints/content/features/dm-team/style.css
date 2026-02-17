@@ -1,0 +1,133 @@
+.team-sidebar .mm-dm-team-item {
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+.team-sidebar .mm-dm-team-divider {
+  height: 1px;
+  margin: 8px 6px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.team-sidebar .mm-dm-team-item .team-container {
+  position: relative;
+}
+
+.team-sidebar .mm-dm-team-item .mm-dm-unread-badge {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+}
+
+.team-sidebar .mm-dm-team-item .mm-dm-unread-badge.mm-dm-unread-badge-visible {
+  display: inline-block;
+}
+
+.team-sidebar .mm-dm-team-item .mm-team-label,
+.team-sidebar .mm-dm-team-item.mm-dm-team-active .mm-team-label {
+  color: #d1d5db;
+}
+
+.team-sidebar .mm-dm-team-item .mm-dm-team-icon {
+  background: rgba(255, 255, 255, 0.01);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  border-radius: 50%;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .mm-dm-team-item.mm-dm-team-active {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.mm-dm-feature-enabled #unreadIndicatorTop,
+.mm-dm-feature-enabled #unreadIndicatorBottom {
+  display: none !important;
+}
+
+.mm-dm-view-active .team-sidebar .draggable-team-container:not(.mm-dm-team-item) .team-container.active,
+.mm-dm-view-active .team-sidebar .draggable-team-container:not(.mm-dm-team-item):has(.team-container.active) {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.mm-dm-view-active .team-sidebar:not(.mm-team-sidebar-expanded) .draggable-team-container:not(.mm-dm-team-item) .TeamIcon,
+.mm-dm-view-active .team-sidebar:not(.mm-team-sidebar-expanded) .draggable-team-container:not(.mm-dm-team-item) .TeamIcon__content,
+.mm-dm-view-active .team-sidebar:not(.mm-team-sidebar-expanded) .draggable-team-container:not(.mm-dm-team-item) .TeamIcon__image,
+.mm-dm-view-active .team-sidebar:not(.mm-team-sidebar-expanded) .draggable-team-container:not(.mm-dm-team-item) .TeamIcon__initials {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+.mm-dm-view-active .SidebarChannelGroup {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelGroup[data-rbd-draggable-id^="direct_messages_"],
+.mm-dm-view-active .SidebarChannelGroup[data-rbd-draggable-id^="unreads_"] {
+  display: block;
+}
+
+.mm-dm-feature-enabled .SidebarChannelGroup[data-rbd-draggable-id^="direct_messages_"] {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelGroup.mm-dm-group-show {
+  display: block;
+}
+
+.mm-dm-view-active .SidebarChannelGroup.mm-dm-group-hidden {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelGroupHeader {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelGroup.mm-dm-group-show .SidebarChannelGroupHeader {
+  display: flex;
+}
+
+.mm-dm-view-active .SidebarChannelGroup.mm-dm-group-no-header .SidebarChannelGroupHeader {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelGroup.mm-dm-group-hide-add .SidebarChannelGroupHeader_addButton {
+  display: none;
+}
+
+.mm-dm-view-active .sidebarHeaderContainer {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarGlobalThreads.NavGroupContent.nav.nav-pills__container {
+  display: none;
+}
+
+.mm-dm-view-active .SidebarChannelNavigator {
+  margin-top: 16px !important;
+  margin-bottom: 4px !important;
+}
+
+.mm-dm-team-header-hidden {
+  display: none !important;
+}
+
+.mm-dm-view-active .mm-dm-unread-hidden {
+  display: none !important;
+}
+
+.mm-unread-dm-hidden {
+  display: none !important;
+}
+
+.mm-dm-unread-hidden {
+  display: none !important;
+}
+
+.SidebarChannelGroup.mm-unread-empty {
+  display: none !important;
+}

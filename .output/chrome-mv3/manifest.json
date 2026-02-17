@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"MatterUI","description":"An extension for changing the appearance of some parts of Mattermost (private messages, command menu, etc.)","version":"0.0.1","content_scripts":[{"matches":["<all_urls>"],"run_at":"document_end","css":["content-scripts/content.css"],"js":["content-scripts/content.js"]}]}

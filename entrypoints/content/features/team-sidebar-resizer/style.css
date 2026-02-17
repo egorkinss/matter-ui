@@ -1,0 +1,167 @@
+.team-sidebar [data-rbd-droppable-id="my_teams"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow-x: hidden;
+  margin: 0px 6px;
+}
+
+.team-sidebar .team-wrapper .scrollbar--view {
+    padding-top: 0px !important;
+}
+
+.team-sidebar .team-wrapper .draggable-team-container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-sidebar .draggable-team-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0px 0px 6px 0px !important;
+  padding: 3px;
+  gap: 8px;
+  border: 1px solid transparent;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon,
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon__image,
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon.withImage,
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon__initials,
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon__content {
+  width: 28px;
+  height: 28px;
+  border: none;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .TeamIcon__initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .draggable-team-container:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .draggable-team-container {
+  cursor: pointer;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .team-btn {
+  pointer-events: none;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .team-btn[aria-describedby] {
+  pointer-events: none;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover,
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .team-btn,
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .TeamIcon,
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .TeamIcon.withImage,
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .TeamIcon__content,
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .TeamIcon__initials 
+.team-sidebar.mm-team-sidebar-expanded .team-container.active,
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .team-btn,
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .TeamIcon,
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .TeamIcon__content,
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .TeamIcon__initials 
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .TeamIcon.withImage:not(-no-hover):hover .TeamIcon_image {
+  background: transparent;
+  box-shadow: none !important;
+  border: none;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .team-container:hover .TeamIcon__image,
+.team-sidebar.mm-team-sidebar-expanded .team-container.active .TeamIcon__image {
+  box-shadow: none;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .draggable-team-container:has(.team-container.active) {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.team-sidebar .mm-team-label {
+  display: none;
+  flex: 1 1 auto;
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.team-sidebar.mm-team-sidebar-expanded .mm-team-label {
+  display: block;
+}
+
+.team-sidebar .draggable-team-container .team-container.active + .mm-team-label,
+.team-sidebar .draggable-team-container .team-container.active ~ .mm-team-label {
+  color: #ffffff;
+}
+
+.team-sidebar .draggable-team-container .mm-team-label {
+  color: #d1d5db;
+}
+
+.team-sidebar.mm-team-sidebar-animating {
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .team-sidebar {
+    width: 65px !important;
+    min-width: 65px !important;
+    max-width: 65px !important;
+    flex: 0 0 65px !important;
+    position: static !important;
+  }
+  
+  #mm-team-sidebar-resizer {
+    display: none !important;
+  }
+  
+  .team-sidebar .mm-team-label {
+    display: none !important;
+  }
+  
+  .team-sidebar [data-rbd-droppable-id="my_teams"] {
+    margin: 0px !important;
+    align-items: center !important;
+  }
+  
+  .team-sidebar .draggable-team-container {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important;
+  }
+}
